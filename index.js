@@ -5,7 +5,7 @@ const fs = require('fs');
 const routes = require('./routes');
 const { conn } = require("./src/db.js");
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001
 
 // Middleware de CORS
 app.use(cors());
